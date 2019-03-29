@@ -20,42 +20,30 @@ summary:
   striptags: true
 blog:
   route: ''
-description: 'A very delicious blog.'
+description: 'Blog'
 global_featured_image: featured.jpg
 social:
   -
     text: facebook
-    url: 'http://www.facebook.com/getgrav'
-  -
-    text: twitter
-    url: 'http://www.twitter.com/getgrav'
-  -
-    text: google-plus
-    url: 'http://www.plus.google.com/getgrav'
-  -
-    text: linkedin
-    url: 'http://www.linkedin.com/getgrav'
+    url: 'https://www.facebook.com/Pure-Music-1739367986287132'
   -
     text: youtube-play
-    url: 'http://www.youtube.com/getgrav'
-  -
-    text: home
-    url: 'http://www.getgrav.org'
+    url: 'https://www.youtube.com/channel/UCiEkoy3KJE18qWgIJ-s_Yuw'
 slider:
   -
     image: slide3.jpg
-    title: 'A very delicious blog'
+    title: 'Vent dEst'
     url: '#'
   -
     image: slide1.jpg
-    title: 'Duis autem'
+    title: 'Vent dEst'
     url: '#'
   -
     image: slide2.jpg
-    title: 'Pumpkin recipe'
+    title: 'Vent dEst'
     url: '#'
 menu:
   -
     url: error
     text: 'Error Page'
-copyright: 'Designed and developed by <a title="WebMan WordPress Themes" href="http://www.webmandesign.eu/"><strong>WebMan Design</strong></a>, Ported By <a href="http://www.getgrav.org" rel="dofollow" target="_blank" title="Grav">Grav Team</a>'
+copyright: ''

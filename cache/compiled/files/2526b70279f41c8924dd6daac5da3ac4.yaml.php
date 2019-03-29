@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'themes://receptar/receptar.yaml',
-    'modified' => 1553214180,
+    'modified' => 1553842123,
     'data' => [
         'enabled' => true,
         'showchildpages' => [

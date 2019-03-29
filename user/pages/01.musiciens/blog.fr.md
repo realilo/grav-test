@@ -1,7 +1,7 @@
 ---
 title: 'Les musiciens'
 body_classes: 'header-image fullwidth'
-blog_url: blog
+blog_url: musiciens
 sitemap:
     changefreq: monthly
     priority: 1.03
@@ -13,7 +13,7 @@ content:
     limit: 6
     pagination: true
 feed:
-    description: 'Sample Blog Description'
+    description: 'Musiciens'
     limit: 10
 pagination: true
 ---

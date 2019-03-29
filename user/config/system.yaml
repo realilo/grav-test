@@ -9,20 +9,7 @@ pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 intl_enabled: true
 languages:
   supported:
-    - en
-    - de
-    - es
-    - cs
-    - fi
     - fr
-    - it
-    - nb
-    - nl
-    - el
-    - pt
-    - ro
-    - ru
-    - pl
   include_default_lang: true
   translations: true
   translations_fallback: true
@@ -33,7 +20,7 @@ languages:
     include_lang: true
     include_route: false
 home:
-  alias: /blog
+  alias: /accueil
   hide_in_urls: false
 pages:
   theme: receptar

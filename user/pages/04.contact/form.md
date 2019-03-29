@@ -6,7 +6,7 @@ form:
         -
             name: name
             label: Name
-            placeholder: 'Enter your name'
+            placeholder: 'Nom'
             autofocus: 'on'
             autocomplete: 'on'
             type: text
@@ -15,8 +15,8 @@ form:
         -
             name: email
             label: Email
-            placeholder: 'Enter your email address'
-            type: text
+            placeholder: 'Adresse'
+            type: email
             validate:
                 rule: email
                 required: true
@@ -24,14 +24,14 @@ form:
             name: message
             label: Message
             size: long
-            placeholder: 'Enter your message'
+            placeholder: 'message'
             type: textarea
             validate:
                 required: true
     buttons:
         -
             type: submit
-            value: Submit
+            value: Envoyer
             classes: btn
     process:
         -
@@ -49,7 +49,7 @@ form:
                 extension: txt
                 body: '{% include ''forms/data.txt.twig'' %}'
         -
-            message: 'Thank you for your feedback!'
+            message: 'Merci!'
         -
             display: thankyou
 ---
