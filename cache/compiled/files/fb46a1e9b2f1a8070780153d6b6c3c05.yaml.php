@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/wamp/www/ventdest.group/user/config/site.yaml',
-    'modified' => 1553843337,
+    'modified' => 1553847225,
     'data' => [
         'title' => 'Vent d\'est',
         'default_lang' => 'fr',
@@ -45,27 +45,12 @@ return [
         ],
         'slider' => [
             0 => [
-                'image' => 'slide3.jpg',
-                'title' => 'Vent dEst',
-                'url' => '#'
-            ],
-            1 => [
                 'image' => 'slide1.jpg',
-                'title' => 'Vent dEst',
-                'url' => '#'
-            ],
-            2 => [
-                'image' => 'slide2.jpg',
-                'title' => 'Vent dEst',
+                'title' => 'Album',
                 'url' => '#'
             ]
         ],
-        'menu' => [
-            0 => [
-                'url' => 'error',
-                'text' => 'Error Page'
-            ]
-        ],
+        'menu' => NULL,
         'copyright' => ''
     ]
 ];

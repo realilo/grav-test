@@ -39,25 +39,6 @@
 
       {% if not truncate %}
       <div class="entry-meta entry-meta-bottom">
-        <time datetime="{{ 'MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1) }} {{ page.date|date("d, Y") }}" class="entry-date entry-meta-element published" title="{{ 'MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1) }} {{ page.date|date("d, Y") }}" itemprop="datePublished">{{ 'MONTHS_OF_THE_YEAR'|ta(post.date|date('n') - 1) }} {{ page.date|date("d, Y") }}</time>
-
-        <span class="author vcard entry-meta-element">
-          {% if page.header.author.name or site.author.name %}
-          {% if page.header.author.name %}
-          {% if page.header.author.url %}
-          <a href="{{ page.header.author.url }}">{{ page.header.author.name }}</a>
-          {% else %}
-          {{ page.header.author.name }}
-          {% endif %}
-          {% else %}
-          {% if site.author.url %}
-          <a href="{{ site.author.url }}">{{ site.author.name }}</a>
-          {% else %}
-          {{ site.author.name }}
-          {% endif %}
-          {% endif %}
-          {% endif %}
-        </span>
         {% if page.taxonomy.tag %}
         <span class="tags-links entry-meta-element">
           {% for tag in page.taxonomy.tag %}
@@ -194,16 +175,6 @@
         windowOpen=window.open(jQuery(this).attr('href'),'wpcomgoogle-plus-1','menubar=1,resizable=1,width=480,height=550');return false;});});</script>
         {% endif %}
       </div>
-
-      {% if not truncate %}
-      <div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
-        <h3 class="jp-relatedposts-headline"><em>{{ 'RELATED_POSTS'|t }}</em></h3>
-        <div class="jp-relatedposts-items jp-relatedposts-items-visual">
-          {% include 'partials/relatedpages.html.twig' %}
-        </div>
-      </div>
-      <hr/>
-      {% endif %}
 
       {% if not truncate %}
       {% if config.plugins.jscomments.enabled and config.plugins.jscomments.provider %}

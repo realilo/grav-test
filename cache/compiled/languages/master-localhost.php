@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1553842265,
-    'checksum' => '3148da68c2915433d3dce05262cda266',
+    'timestamp' => 1553848611,
+    'checksum' => '2029e9d8433927c7e04d29f3487262cf',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -119,10 +119,6 @@ return [
             ]
         ],
         'user/plugins' => [
-            'plugins/comments' => [
-                'file' => 'user/plugins/comments/languages.yaml',
-                'modified' => 1553842122
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/languages.yaml',
                 'modified' => 1553842122
@@ -133,14 +129,6 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/languages.yaml',
-                'modified' => 1553842123
-            ],
-            'plugins/relatedpages' => [
-                'file' => 'user/plugins/relatedpages/languages.yaml',
-                'modified' => 1553842123
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/languages.yaml',
                 'modified' => 1553842123
             ]
         ],
@@ -1152,27 +1140,6 @@ return [
                 'CONTENT_PADDING' => 'Abstand um Inhalte',
                 'CONTENT_PADDING_HELP' => 'Abstand um Inhalte aktivieren/deaktivieren um mehr Platz anzubieten'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Kommentar hinzufügen',
-                'COMMENTS' => 'Kommentare',
-                'EMAIL_NOT_CONFIGURED' => 'Email nicht konfiguriert',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Neuer Kommentar für %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Ein neuer Kommentar am %1$s von %3$s (%4$s).</p><p>Seite: %2$s</p><p>Text: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Name:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'geschrieben am',
-                'BY' => 'von',
-                'NAME_LABEL' => 'Name',
-                'NAME_PLACEHOLDER' => 'Namen eingeben',
-                'EMAIL_LABEL' => 'Email',
-                'EMAIL_PLACEHOLDER' => 'Email-Adresse eingeben',
-                'MESSAGE_LABEL' => 'Kommentar',
-                'MESSAGE_PLACEHOLDER' => 'Kommentar eingeben',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Absenden',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Neuer Kommentar] von {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Vielen Dank für den Kommentar!'
-            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'E-Mail ist nicht konfiguriert',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Bitte konfigurieren sie eine \'An\' (\'to\') Adresse in den Email-Plugin-Einstellungen oder im Formular.',
@@ -1231,45 +1198,6 @@ return [
                 'DESTINATION_NOT_SPECIFIED' => 'Zielort nicht definiert',
                 'INVALID_MIME_TYPE' => 'Der MIME-Type %s für die Datei %s ist nicht erlaubt.',
                 'INVALID_FILE_EXTENSION' => 'Die Dateiendung %s ist nicht erlaubt.'
-            ],
-            'PLUGIN_REL_PAGES' => [
-                'PLUGIN_STATUS' => 'Plugin-Status',
-                'BASICS' => 'Grundeinstellungen',
-                'LIMIT' => 'Angezeigt',
-                'LIMIT_HELP' => 'Die Anzahl der angezeigten verwandten Seiten',
-                'ORDER' => 'Reihenfolge',
-                'ORDER_BY' => 'Sortiert nach',
-                'SHOW_SCORE' => 'Zeige Bewertung',
-                'SHOW_SCORE_HELP' => 'Umschalter, ob die Bewertung in der Ausgabe angezeigt werden soll',
-                'ITEMS' => 'Elemente',
-                'ITEMS_HELP' => 'Unterstützt `@self`, `@page`, und `@taxonomy` basierte Sammlungen (collections)',
-                'PAGE_IN_FILTER' => 'Seite \'drin\' Filter',
-                'PAGE_IN_FILTER_HELP' => 'Aktiviert, wenn die aktuelle Seite in der gefilterten Sammlung (collection) enthalten sein muss',
-                'EXPLICIT_PROCESS' => 'Verarbeite explizite Seiten',
-                'EXPLICIT_PROCESS_HELP' => 'Aktiviere diesen Abgleich der expliziten Seiten',
-                'EXPLICIT_SCORE' => 'Bewertung der expliziten Seiten',
-                'EXPLICIT_SCORE_HELP' => 'Eine Bewertung von (0 - 100) um expliziten Seiten eine Gewichtung zu geben',
-                'TAXONOMY_MATCH' => 'Abgleich der Taxonomie-Typen',
-                'TAXONOMY' => 'Taxonomie',
-                'TAXONOMY_HELP' => 'Welcher Taxonomie-Typ soll für den Seiten-Abgleich genutzt werden',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-Taxonomie',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Aktiviere die Taxonomie für den Taxonomie-Abgleich',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-Inhalt',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Aktiviere die Taxonomie für den Inhalts-Abgleich',
-                'CONTENT_MATCH' => 'Abgleich der Inhalts-Typen',
-                'CONTENT_PROCESS' => 'Inhalt-Inhalt',
-                'CONTENT_PROCESS_HELP' => 'Aktiviere den Inhalt-zu-Inhalt-Abgleich (Beachte: Deaktivieren bei viel Inhalt)',
-                'ADVANCED' => 'Erweitert',
-                'TAXONOMY_SCORE_SCALE' => 'Taxonomie-Taxonomie Bewertungsskala',
-                'CONTENT_SCORE_SCALE' => 'Taxonomie-Inhalt Bewertungsskala'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Suche …',
-                'SEARCH_RESULTS' => 'Suchergebnisse',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Suche: <strong>%s</strong> fand ein Ergebnis',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Suche: <strong>%s</strong> fand %s Ergebnisse',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Bitte geben Sie mindestens %s Zeichen ein',
-                'SEARCH_VALUE' => 'Suchen'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -2244,27 +2172,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'UPLOADS_DANGEROUS_EXTENSIONS' => 'Dangerous Extensions',
                 'UPLOADS_DANGEROUS_EXTENSIONS_HELP' => 'Block these extensions from being uploaded no matter the accepted MIME types'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Add a comment',
-                'COMMENTS' => 'Comments',
-                'EMAIL_NOT_CONFIGURED' => 'Email not configured',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'New comment on %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>A new comment was made on %1$s by %3$s (%4$s).</p><p>Page: %2$s</p><p>Text: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Name:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Written on',
-                'BY' => 'by',
-                'NAME_LABEL' => 'Name',
-                'NAME_PLACEHOLDER' => 'Enter your name',
-                'EMAIL_LABEL' => 'Email',
-                'EMAIL_PLACEHOLDER' => 'Enter your email address',
-                'MESSAGE_LABEL' => 'Comment',
-                'MESSAGE_PLACEHOLDER' => 'Enter your comment',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Submit',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[New Comment] from {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Thank you for writing your comment!'
-            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Mail Engine',
                 'CONTENT_TYPE' => 'Content type',
@@ -2365,43 +2272,6 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
                 'DESTINATION_NOT_SPECIFIED' => 'Destination not specified',
                 'INVALID_MIME_TYPE' => 'The MIME type %s for the file %s is not an accepted.',
                 'INVALID_FILE_EXTENSION' => 'The File Extension for the file %s is not an accepted.'
-            ],
-            'PLUGIN_REL_PAGES' => [
-                'BASICS' => 'Basic Settings',
-                'LIMIT' => 'Limit',
-                'LIMIT_HELP' => 'The number of related pages to display',
-                'ORDER' => 'Order',
-                'ORDER_BY' => 'Ordery by',
-                'SHOW_SCORE' => 'Show score',
-                'SHOW_SCORE_HELP' => 'Toggle to determine if scores should be displayed in output',
-                'ITEMS' => 'Items',
-                'ITEMS_HELP' => 'Supports `@self`, `@page`, and `@taxonomy` based collections',
-                'PAGE_IN_FILTER' => 'Page \'in\' filter',
-                'PAGE_IN_FILTER_HELP' => 'Enabled if the current page must be in the filtered collection',
-                'EXPLICIT_PROCESS' => 'Process explicit pages',
-                'EXPLICIT_PROCESS_HELP' => 'Enable this explicit page matching',
-                'EXPLICIT_SCORE' => 'Explicit page score',
-                'EXPLICIT_SCORE_HELP' => 'A score ranging from (0 - 100) to give explicit pages a weight',
-                'TAXONOMY_MATCH' => 'Taxonomy Type Matching',
-                'TAXONOMY' => 'Taxonomy',
-                'TAXONOMY_HELP' => 'Which taxonomy type to use for page matching, supports strings or YAML array of multiple taxonomy types',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomy-taxonomy',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Enable taxonomy to taxonomy matching',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomy-content',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Enable taxonomy to Content matching',
-                'CONTENT_MATCH' => 'Content Type Matching',
-                'CONTENT_PROCESS' => 'Content-content',
-                'CONTENT_PROCESS_HELP' => 'Enable content to content matching (NOTE: Disable if you have lots of content)',
-                'ADVANCED' => 'Advanced',
-                'TAXONOMY_SCORE_SCALE' => 'Taxonomy-taxonomy score scale',
-                'CONTENT_SCORE_SCALE' => 'Taxonomy-content score scale'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Search …',
-                'SEARCH_RESULTS' => 'Search Results',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> found one result',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> found %s results',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Please add at least %s characters'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -3362,27 +3232,6 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 '2FA_SECRET_HELP' => 'Escanea este código QR en tu [Aplicación de Autenticador](https://learn.getgrav.org/admin-panel/2fa#apps). También es una buena idea hacer un respaldo del secreto en una ubicación segura, para el caso que necesites reinstalar tu aplicación. Revisa la [Documentación de Grav](https://learn.getgrav.org/admin-panel/2fa) para mas información ',
                 '2FA_REGENERATE' => 'Regenerar'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Agregar un comentario',
-                'COMMENTS' => 'Comentarios',
-                'EMAIL_NOT_CONFIGURED' => 'El Email no está configurado',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nuevo comentario en %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nuevo comentario se hizo en %1$s por %3$s (%4$s).</p><p>Page: %2$s</p><p>Text: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Nombre:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Escrito en',
-                'BY' => 'por',
-                'NAME_LABEL' => 'Nombre',
-                'NAME_PLACEHOLDER' => 'Escriba su nombre',
-                'EMAIL_LABEL' => 'Email',
-                'EMAIL_PLACEHOLDER' => 'Escriba su email',
-                'MESSAGE_LABEL' => 'Comentario',
-                'MESSAGE_PLACEHOLDER' => 'Escriba su comentario',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Enviar',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Nuevo comentario] de {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Gracias por escribir su comentario!'
-            ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Por favor configura una dirección de \'remitente\' en la configuración del Plugin de Email o en el formulario',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Por favor configura una dirección de \'destinatario\' en la configuración del Plugin de Email o en el formulario'
@@ -3441,42 +3290,6 @@ Tienes **2FA** habilitado en esta cuenta. Por favor usa tu aplicación **2FA** p
                 'INLINE_ERRORS_HELP' => 'Útil con \'validación del lado del cliente\' desactivado, muestra errores en el formulario contextual en línea',
                 'RESOLUTION_MIN' => '{{attr}} fué menor que el mínimo {{min}}px <br />',
                 'RESOLUTION_MAX' => '{{attr}} fué mayor que el máximo {{max}}px <br />'
-            ],
-            'PLUGIN_REL_PAGES' => [
-                'BASICS' => 'Ajustes básicos',
-                'LIMIT' => 'Límite',
-                'LIMIT_HELP' => 'La cantidad de páginas relacionas que se mostrarán',
-                'ORDER' => 'Ordenar',
-                'ORDER_BY' => 'Ordenar por',
-                'SHOW_SCORE' => 'Mostrar puntos',
-                'SHOW_SCORE_HELP' => 'Indica si se mostrará la puntuación',
-                'ITEMS' => 'Elementos',
-                'ITEMS_HELP' => 'Proporciona colecciones basadas en `@self`, `@page` y `@taxonomy`',
-                'PAGE_IN_FILTER' => 'Página \'en\' filtro',
-                'PAGE_IN_FILTER_HELP' => 'Activado si la página actual debe estar en la colección filtrada',
-                'EXPLICIT_PROCESS' => 'Procesar páginas explícitas',
-                'EXPLICIT_PROCESS_HELP' => 'Activa la relación de páginas explícitas',
-                'EXPLICIT_SCORE' => 'Puntuación de páginas explícitas',
-                'EXPLICIT_SCORE_HELP' => 'Una puntuación (entre 0 y 100) para dar un peso las páginas explícitas',
-                'TAXONOMY_MATCH' => 'Comparación de Tipo de taxonomía',
-                'TAXONOMY' => 'Taxonomía',
-                'TAXONOMY_HELP' => 'Qué tipo de taxonomía se usará para relacionar páginas',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomía-taxonomía',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Activa relación de taxonomía a taxonomía',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomía-contenido',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Activa relación de taxonomía a contenido',
-                'CONTENT_MATCH' => 'Relación de tipo de contenido',
-                'CONTENT_PROCESS' => 'Contenido-contenido',
-                'CONTENT_PROCESS_HELP' => 'Activa relación de contenido a contenido (NOTA: Desactive esto si tiene mucho contenido)',
-                'ADVANCED' => 'Avanzado',
-                'TAXONOMY_SCORE_SCALE' => 'Escala de puntuación Taxonomía-taxonomía',
-                'CONTENT_SCORE_SCALE' => 'Escala de puntuación Taxonomía-contenido'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Buscar …',
-                'SEARCH_RESULTS' => 'Resultados de la búsqueda',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Consulta: <strong>%s</strong> se encontró 1 resultado',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Consulta: <strong>%s</strong> se encontraron %s resultados'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -4360,27 +4173,6 @@ Ruta: `%2$s`
                 '2FA_SECRET_HELP' => 'Scannez ce code QR dans votre [app d\'authentification](https://learn.getgrav.org/admin-panel/2fa#apps). Il est également conseillé de sauvegarder le code secret dans un emplacement sûr, au cas où vous deviez réinstaller l\'app. Consultez les [aides Grav](https://learn.getgrav.org/admin-panel/2fa) pour plus d\'informations ',
                 '2FA_REGENERATE' => 'Régénérer'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Ajouter un commentaire',
-                'COMMENTS' => 'Commentaires',
-                'EMAIL_NOT_CONFIGURED' => 'E-mail non configuré',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nouveau commentaire sur %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nouveau commentaire a été publié sur %1$s par %3$s (%4$s).</p><p>Page : %2$s</p><p>Texte : %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Nom :',
-                'EMAIL' => 'E-mail :',
-                'WRITTEN_ON' => 'Écrit le',
-                'BY' => 'par',
-                'NAME_LABEL' => 'Nom',
-                'NAME_PLACEHOLDER' => 'Indiquez votre nom',
-                'EMAIL_LABEL' => 'E-mail',
-                'EMAIL_PLACEHOLDER' => 'Indiquez votre adresse e-mail',
-                'MESSAGE_LABEL' => 'Commentaire',
-                'MESSAGE_PLACEHOLDER' => 'Rédigez votre commentaire',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Envoyer',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Nouveau commentaire] de {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Merci d\'avoir rédigé votre commentaire !'
-            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'L’e-mail n’est pas configuré',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Veuillez configurer une adresse de \'destinataire\' dans les paramètres du Plugin ou dans le formulaire.',
@@ -4426,43 +4218,6 @@ Ruta: `%2$s`
                 'DROPZONE_REMOVE_FILE' => 'Supprimer le fichier',
                 'DROPZONE_REMOVE_FILE_CONFIRMATION' => 'Êtes-vous sûr de vouloir supprimer ce fichier ?',
                 'DROPZONE_RESPONSE_ERROR' => 'Le serveur a répondu avec le code {{statusCode}}.'
-            ],
-            'PLUGIN_REL_PAGES' => [
-                'BASICS' => 'Réglages de base',
-                'LIMIT' => 'Limite',
-                'LIMIT_HELP' => 'Le nombre de pages en relation à afficher',
-                'ORDER' => 'Classement',
-                'ORDER_BY' => 'Classement par',
-                'SHOW_SCORE' => 'Afficher le score',
-                'SHOW_SCORE_HELP' => 'Activer/désactiver afin de déterminer si les scores doivent être affichés en sortie',
-                'ITEMS' => 'Éléments',
-                'ITEMS_HELP' => 'Prise en charge des collections basées sur `@self`, `@page` et `@taxonomy`',
-                'PAGE_IN_FILTER' => 'Page \'dans\' le filtre',
-                'PAGE_IN_FILTER_HELP' => 'Activer si la page actuelle doit être présente dans la collection filtrée',
-                'EXPLICIT_PROCESS' => 'Traiter les pages explicites',
-                'EXPLICIT_PROCESS_HELP' => 'Activer la correspondance explicite pour cette page',
-                'EXPLICIT_SCORE' => 'Score explicite de la page',
-                'EXPLICIT_SCORE_HELP' => 'Un score compris entre (0 - 100) pour rendre une page explicite',
-                'TAXONOMY_MATCH' => 'Correspondance par type de taxonomie',
-                'TAXONOMY' => 'Taxonomie',
-                'TAXONOMY_HELP' => 'Quel type de taxonomie utiliser pour la correspondance des pages',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-taxonomie',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Activer la taxonomie pour la correspondance de taxonomie',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-contenu',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Activer la taxonomie pour la correspondance de contenu',
-                'CONTENT_MATCH' => 'Correspondance par type de contenu',
-                'CONTENT_PROCESS' => 'Contenu-contenu',
-                'CONTENT_PROCESS_HELP' => 'Activer la correspondance de contenu (NOTE : désactivez si vous avez beaucoup de contenu)',
-                'ADVANCED' => 'Avancés',
-                'TAXONOMY_SCORE_SCALE' => 'Taxonomie-niveau de score de taxonomie',
-                'CONTENT_SCORE_SCALE' => 'Taxonomie-niveau de score de contenu'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Recherche …',
-                'SEARCH_RESULTS' => 'Résultats de la recherche',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Recherche : Un résultat trouvé pour <strong>%s</strong>',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Recherche : %2$s résultats trouvés pour <strong>%1$s</strong>',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Veuillez ajouter au moins %s caractères'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -5223,27 +4978,6 @@ Path: `%2$s`
                 '2FA_CODE_INPUT' => '000000',
                 '2FA_REGENERATE' => 'Ponovno stvori'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Dodaj komentar',
-                'COMMENTS' => 'Komentari',
-                'EMAIL_NOT_CONFIGURED' => 'Email adresa nije podešena',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Novi komentar na %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Novi komentar je napisan na %1$s od %3$s (%4$s).</p><p>Stranica:: %2$s</p><p>Tekst: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Ime:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Napisano je na',
-                'BY' => 'od',
-                'NAME_LABEL' => 'Ime',
-                'NAME_PLACEHOLDER' => 'Unesite ime',
-                'EMAIL_LABEL' => 'Email adresa',
-                'EMAIL_PLACEHOLDER' => 'Unesite email adresu',
-                'MESSAGE_LABEL' => 'Komentar',
-                'MESSAGE_PLACEHOLDER' => 'Unesite komentar',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Pošalji',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Novi komentar] od {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Hvala Vam što ste napisali svoj komentar!'
-            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Email nije konfiguriran',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Konfigurirajte \'za\' (\'to\') adresu u postavkama Email dodatka ili u obrascu',
@@ -5263,12 +4997,6 @@ Path: `%2$s`
                 'ACCEPT' => 'Dopušteni MIME Tipovi',
                 'ACCEPT_HELP' => 'Lista dopuštenih MIME Tipova koji su dozvoljeni za upload',
                 'ERROR_VALIDATING_CAPTCHA' => 'Greška pri validiranju Captcha'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Traži …',
-                'SEARCH_RESULTS' => 'Rezultati pretrage',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Upit: <strong>%s</strong> je pronašao jedan rezultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Upit: <strong>%s</strong> je pronašao %s rezultata'
             ],
             'INFLECTOR_UNCOUNTABLE' => [
                 0 => 'oprema',
@@ -6982,27 +6710,6 @@ Du har **2FA** aktivert på denne kontoen. Bruk din **2FA** app for å angi gjel
                 '2FA_SECRET_HELP' => 'Skanne QR koden inn i [Autentiseringsappen] (https://learn.getgrav.org/admin-panel/2fa#apps). Det er også lurt å sikkerhetskopiere den hemmelige nøkkelen på et trygt sted i tilfelle du må re-installere appen.  Sjekk [Gravs dokumentasjon] (https://learn.getgrav.org/admin-panel/2fa) for mer info ',
                 '2FA_REGENERATE' => 'Opprett ny'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Skriv en kommentar',
-                'COMMENTS' => 'Kommentarer',
-                'EMAIL_NOT_CONFIGURED' => 'Epost er ikke konfigurert',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Ny kommentar på %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>En ny kommentar er skrevet på %1$s av %3$s (%4$s).</p><p>Side: %2$s</p><p>Tekst: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Navn:',
-                'EMAIL' => 'Epost:',
-                'WRITTEN_ON' => 'Skrevet på',
-                'BY' => 'av',
-                'NAME_LABEL' => 'Navn',
-                'NAME_PLACEHOLDER' => 'Skriv ditt navn',
-                'EMAIL_LABEL' => 'Epost',
-                'EMAIL_PLACEHOLDER' => 'Skriv din epost adresse',
-                'MESSAGE_LABEL' => 'Kommentar',
-                'MESSAGE_PLACEHOLDER' => 'Skriv din kommentar',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Send',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Ny kommentar] fra {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Takk for din kommentar!'
-            ],
             'FRONTMATTER_ERROR_PAGE' => '---
 Tittel: %1$s
 ---
@@ -7885,27 +7592,6 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 '2FA_SECRET_HELP' => 'Scanați acest cod QR cu [aplicația de autentificare](https://learn.getgrav.org/admin-panel/2fa#apps). De asemenea este o idee bună să salvați secretul într-o locație sigură, în cazul in care aveți nevoie să reinstalați aplicația de autentificare. Verificați [documentația Grav](https://learn.getgrav.org/admin-panel/2fa) pentru mai multe informații ',
                 '2FA_REGENERATE' => 'Regenerează'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Adăugați un comentariu',
-                'COMMENTS' => 'Comentarii',
-                'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Comentariu nou pentru %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nou comentariu a fost adăugat la %1$s de către %3$s (%4$s).</p><p>Pagină: %2$s</p><p>Text: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Nume:',
-                'EMAIL' => 'Adresă de email:',
-                'WRITTEN_ON' => 'Scris în data de',
-                'BY' => 'de către',
-                'NAME_LABEL' => 'Numele',
-                'NAME_PLACEHOLDER' => 'Introduceți numele Dvs.',
-                'EMAIL_LABEL' => 'Email',
-                'EMAIL_PLACEHOLDER' => 'Introduceți adresa Dvs. de email',
-                'MESSAGE_LABEL' => 'Comentariu',
-                'MESSAGE_PLACEHOLDER' => 'Scrieți comentariul Dvs.',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Trimiteți',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Comentariu nou] from {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Vă mulțumim pentru comentariu!'
-            ],
             'PLUGIN_EMAIL' => [
                 'EMAIL_NOT_CONFIGURED' => 'Adresa de email nu este configurată',
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Vă rugam setați o adresă \'către\' în setările modulului Email sau în formular',
@@ -7933,42 +7619,6 @@ Aveți **2FA** activată pentru acest cont. Vă rugăm folosiți aplicația pent
                 'RECAPTCHA_SITE_KEY_HELP' => 'Pentru mai multe detalii vă rugăm vizitați https://developers.google.com/recaptcha',
                 'RECAPTCHA_SECRET_KEY' => 'Cheia secretă pentru Site',
                 'RECAPTCHA_SECRET_KEY_HELP' => 'Pentru mai multe detalii vă rugăm vizitați  https://developers.google.com/recaptcha'
-            ],
-            'PLUGIN_REL_PAGES' => [
-                'BASICS' => 'Setări de bază',
-                'LIMIT' => 'Limită',
-                'LIMIT_HELP' => 'Numărul afișat al paginilor legate',
-                'ORDER' => 'Ordinea',
-                'ORDER_BY' => 'Ordonează după',
-                'SHOW_SCORE' => 'Arată scorul',
-                'SHOW_SCORE_HELP' => 'Comutați pentru afișarea scorurilor',
-                'ITEMS' => 'Articole',
-                'ITEMS_HELP' => 'Acceptă colecții bazate pe `@self`, `@page` și `@taxonomy`',
-                'PAGE_IN_FILTER' => 'Filtru \'in\' pagină',
-                'PAGE_IN_FILTER_HELP' => 'Activează dacă pagina curentă trebuie să fie în colecția filtrată',
-                'EXPLICIT_PROCESS' => 'Procesează anumite pagini specifice',
-                'EXPLICIT_PROCESS_HELP' => 'Activează pentru procesarea anumitor pagini specifice',
-                'EXPLICIT_SCORE' => 'Scorul paginilor specifice',
-                'EXPLICIT_SCORE_HELP' => 'Un scor între (0 - 100) pentru a da unor pagini specifice greutate',
-                'TAXONOMY_MATCH' => 'Potrivire după Taxonomie',
-                'TAXONOMY' => 'Taxonomie',
-                'TAXONOMY_HELP' => 'Ce fel de taxonomie să fie folosită la potrivirea paginilor',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-taxonomie',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Activeazā potrivirea între taxonomii',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-conținut',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Activează potrivirea după taxonomie - conținut',
-                'CONTENT_MATCH' => 'Potrivirea după conținut',
-                'CONTENT_PROCESS' => 'Conținut-conținut',
-                'CONTENT_PROCESS_HELP' => 'Activează pentru potrivire după conținut (Notă: dezactivați dacă aveți conținut mult)',
-                'ADVANCED' => 'Avansat',
-                'TAXONOMY_SCORE_SCALE' => 'Scorul scalei Taxonomie-taxonomie',
-                'CONTENT_SCORE_SCALE' => 'Scorul scalei Taxonomie-conținut'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Caută …',
-                'SEARCH_RESULTS' => 'Rezultatele căutării',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Căutarea: <strong>%s</strong> a găsit un rezultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Căutarea: <strong>%s</strong> a găsit %s rezultate'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 Titlu: %1$s
@@ -8901,18 +8551,6 @@ Calea: `%2$s`
                 '2FA_ENABLED' => '2FA включен',
                 '2FA_SECRET_HELP' => 'Сканируйте этот QR-код в свое [приложение аутентификации] (https://learn.getgrav.org/admin-panel/2fa#apps). Также рекомендуется резервировать секрет в безопасном месте, если вам нужно переустановить приложение. Для получения дополнительной информации просмотрите документы [Grav docs] (https://learn.getgrav.org/admin-panel/2fa) '
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Добавить комментарий',
-                'COMMENTS' => 'Комментарии',
-                'EMAIL_NOT_CONFIGURED' => 'Email не настроен',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Новый комментарий к %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Новый комментарий был сделан на %1$s by %3$s (%4$s).</p><p>Страница: %2$s</p><p>Текст: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Имя:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Написан в',
-                'BY' => 'от'
-            ],
             'PLUGIN_EMAIL' => [
                 'MAIL_ENGINE' => 'Почтовая система',
                 'CONTENT_TYPE' => 'Тип контента',
@@ -9014,13 +8652,6 @@ Calea: `%2$s`
                 'DESTINATION_NOT_SPECIFIED' => 'Назначение не указано',
                 'INVALID_MIME_TYPE' => 'Тип MIME %s для файла %s не принимается.',
                 'INVALID_FILE_EXTENSION' => 'Расширение файла %s не является допустимым для файла.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Найти …',
-                'SEARCH_RESULTS' => 'Результат поиска',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'По запросу: <strong>%s</strong> результатов найдено 1',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'По запросу: <strong>%s</strong> результатов найдено %s',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Добавьте не менее %s символов'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -12123,12 +11754,6 @@ Máte na svém účtu aktivováno **dvoufaktorové ověřování**. Pro dokonče
                 'YES' => 'Ano',
                 'NO' => 'Ne'
             ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Vyhledat …',
-                'SEARCH_RESULTS' => 'Výsledky hledání',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Hledání výrazu \'<strong>%s</strong>\' našlo jeden výsledek',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Hledání výrazu \'<strong>%s</strong>\' našlo %s výsledků'
-            ],
             'INFLECTOR_UNCOUNTABLE' => [
                 0 => 'vybavení',
                 1 => 'informace',
@@ -13009,12 +12634,6 @@ Du har **2FA** aktiveret for denne konto. Benyt venligst din **2FA**-app til at 
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Fejl',
                 'ERROR_MESSAGE' => 'Ups. Det ser ud til at siden ikke eksisterer.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Søg …',
-                'SEARCH_RESULTS' => 'Søgeresultat',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Søgning: <strong>%s</strong> fandt et resultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Søgning: <strong>%s</strong> fandt %s resultater'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 Titel: %1$s
@@ -14982,12 +14601,6 @@ Sti: `%2$s`
                 'OFFLINE_WARNING' => 'اتصال به GPM امکان پذیر نمیباشد',
                 'CLI_COMPATIBILITY' => 'سازگاری CLI',
                 'CLI_COMPATIBILITY_HELP' => 'دقت کنید فقط از کش کننده های سبک استفاده شود (file، redis، memcache و...)'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'جستجو …',
-                'SEARCH_RESULTS' => 'نتایج جستجو',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'جستار: <strong>%s</strong> یک نتیجه یافت شد',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'جستار: <strong>%s</strong> %s نتیجه یافت شد'
             ]
         ],
         'fi' => [
@@ -16673,27 +16286,6 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 '2FA_SECRET_HELP' => 'Scandisci questo codice QR nella tua [Authenticator App](https://learn.getgrav.org/admin-panel/2fa#apps). È inoltre cosa buona fare il backup del Segreto in un luogo sicuro, nel caso in cui fosse necessario reinstallare la vostra app.  Controllare i [Grav docs] (https://learn.getgrav.org/admin-panel/2fa) per ulteriori informazioni ',
                 '2FA_REGENERATE' => 'Rigenera'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Aggiungi un commento',
-                'COMMENTS' => 'Commenti',
-                'EMAIL_NOT_CONFIGURED' => 'Email non configurata',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nuovo commento su %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Un nuovo commento è stato postato su %1$s da %3$s (%4$s).</p><p>Pagina: %2$s</p><p>Testo: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Nome:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Scritto il',
-                'BY' => 'da',
-                'NAME_LABEL' => 'Nome',
-                'NAME_PLACEHOLDER' => 'Inserisci il tuo nome',
-                'EMAIL_LABEL' => 'Email',
-                'EMAIL_PLACEHOLDER' => 'Inserisci il tuo indirizzo email',
-                'MESSAGE_LABEL' => 'Messaggio',
-                'MESSAGE_PLACEHOLDER' => 'Inserisci il tuo commento',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Invia',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Nuovo commento] da {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Grazie per il tuo commento!'
-            ],
             'PLUGIN_EMAIL' => [
                 'PLEASE_CONFIGURE_A_TO_ADDRESS' => 'Per favore, configura l\'indirizzo di destinazione (\'to\') nella configurazione del Plugin Email, oppure direttamente nella form.',
                 'PLEASE_CONFIGURE_A_FROM_ADDRESS' => 'Per favore, configura l\'indirizzo di provenienza (\'from\') nella configurazione del Plugin Email, oppure direttamente nella form'
@@ -16738,13 +16330,6 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 'DROPZONE_RESPONSE_ERROR' => 'Il Server ha risposto con il codice {{statusCode}}.',
                 'YES' => 'Si',
                 'NO' => 'No'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Cerca …',
-                'SEARCH_RESULTS' => 'Risultati della ricerca',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Ricerca: <strong>%s</strong>. Trovato un risultato',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Ricerca: <strong>%s</strong>. Trovati %s risultati',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Inserisci almeno %s caratteri'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',
             'NICETIME' => [
@@ -17455,33 +17040,6 @@ La **2FA** è abilitata per questo account. Si prega di utilizzare la vostra app
                 '2FA_CODE_INPUT' => '000000',
                 '2FA_SECRET' => '二段階認証',
                 '2FA_REGENERATE' => '再生成'
-            ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'コメントを追加する',
-                'COMMENTS' => 'コメント',
-                'EMAIL_NOT_CONFIGURED' => 'メールアドレスは設定さていません',
-                'NEW_COMMENT_EMAIL_SUBJECT' => '%1$sについて新しいコメント',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>新しいコメントが%1$sについて%3$sから(%4$s)書かれた.</p><p>ページー : %2$s</p><p>文書 : %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => '名前 :',
-                'EMAIL' => 'メールアドレス :',
-                'WRITTEN_ON' => 'に書かれた',
-                'BY' => 'に',
-                'NAME_LABEL' => '名前',
-                'NAME_PLACEHOLDER' => 'お名前を',
-                'EMAIL_LABEL' => 'メールアドレスを',
-                'EMAIL_PLACEHOLDER' => 'ご自分のメールアドレスをここに...',
-                'MESSAGE_LABEL' => 'コメント',
-                'MESSAGE_PLACEHOLDER' => 'コメントをここに',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => '送信する',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[新しいコメント]、 {{ form.value.name|e }}から',
-                'THANK_YOU_MESSAGE' => 'コメントを書いてくださいましてありがとうございました！'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => '検索する …',
-                'SEARCH_RESULTS' => '検索結果',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '検索 : <strong>%s</strong> に一つの結果があります。',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => '検索 : <strong>%s</strong> に %s の結果があります。'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -18854,43 +18412,6 @@ Path: `%2$s`
                 'RANDOM_NAME' => 'Willekeurige naam',
                 'RANDOM_NAME_HELP' => 'Genereer een willekeurige naam van 15 karakters voor de geuploade bestanden'
             ],
-            'PLUGIN_REL_PAGES' => [
-                'BASICS' => 'Basisinstellingen',
-                'LIMIT' => 'Limiet',
-                'LIMIT_HELP' => 'Het aantal weer te geven gerelateerde pagina\'s',
-                'ORDER' => 'Volgorde',
-                'ORDER_BY' => 'Sorteer op',
-                'SHOW_SCORE' => 'Toon score',
-                'SHOW_SCORE_HELP' => 'Schakel om, om te bepalen of scores moeten worden getoond in de uitvoer',
-                'ITEMS' => 'Items',
-                'ITEMS_HELP' => 'Ondersteunt collecties gebaseerd op `@self`, `@page`, en `@taxonomy`',
-                'PAGE_IN_FILTER' => 'Pagina \'in\' filter',
-                'PAGE_IN_FILTER_HELP' => 'Ingeschakeld als de huidige pagina in de gefilterde collectie moet zijn opgenomen',
-                'EXPLICIT_PROCESS' => 'Verwerk expliciete pagina\'s',
-                'EXPLICIT_PROCESS_HELP' => 'Inschakelen van matchen van expliete pagina\'s',
-                'EXPLICIT_SCORE' => 'Expliciete paginascore',
-                'EXPLICIT_SCORE_HELP' => 'Een score van (0 - 100) om expliciete pagina\'s een gewicht te geven',
-                'TAXONOMY_MATCH' => 'Taxonomie Type Matching',
-                'TAXONOMY' => 'Taxonomie',
-                'TAXONOMY_HELP' => 'Welk taxonomie type te gebruiken voor paginamatching',
-                'TAXONOMY_TAXONOMY_PROCESS' => 'Taxonomie-taxonomie',
-                'TAXONOMY_TAXONOMY_PROCESS_HELP' => 'Inschakelen taxonomie met taxonomie matching',
-                'TAXONOMY_CONTENT_PROCESS' => 'Taxonomie-inhoud',
-                'TAXONOMY_CONTENT_PROCESS_HELP' => 'Inschakelen taxonomie met inhoud matching',
-                'CONTENT_MATCH' => 'Inhoud Type Matching',
-                'CONTENT_PROCESS' => 'Inhoud-inhoud',
-                'CONTENT_PROCESS_HELP' => 'Inschakelen inhoud met inhoud matching (N.B.: Uitschakelen als je veel inhoud hebt)',
-                'ADVANCED' => 'Geavanceerd',
-                'TAXONOMY_SCORE_SCALE' => 'Taxonomie-taxonomie score schaal',
-                'CONTENT_SCORE_SCALE' => 'Taxonomie-inhoud score schaal'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Zoeken …',
-                'SEARCH_RESULTS' => 'Zoek resultaten',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Query: <strong>%s</strong> is 1 keer gevonden',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Query: <strong>%s</strong> is %s keer gevonden',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Geef minstens %s tekens in'
-            ],
             'INFLECTOR_IRREGULAR' => [
                 'person' => 'personen',
                 'man' => 'mensen',
@@ -19626,18 +19147,6 @@ Masz na tym koncie włączone **2FA**. Użyj aplikacji od **2FA** i wprowadź ak
                 '2FA_SECRET_HELP' => 'Zeskanuj ten kod QR do swojej [aplikacji uwierzytelniającej](https://learn.getgrav.org/admin-panel/2fa#apps). Zrobienie kopii zapasowej sekretu w bezpiecznym miejscu jest także dobrym pomysłem, w przypadku konieczności reinstalacji aplikacji. Przeczytaj [dokumentację Grav](https://learn.getgrav.org/admin-panel/2fa), aby dowiedzieć się więcej.',
                 '2FA_REGENERATE' => 'Zregeneruj'
             ],
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Dodaj komentarz',
-                'COMMENTS' => 'Komentarzy',
-                'EMAIL_NOT_CONFIGURED' => 'Email jest nie skofigurowany',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Nowy komentarz %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Pojawił się nowy komentarz, napisany %1$s przez %3$s (%4$s).</p><p>Strona: %2$s</p><p>Treść: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Imię:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Napisany przez',
-                'BY' => 'przez'
-            ],
             'PLUGIN_ERROR' => [
                 'ERROR' => 'Błąd',
                 'ERROR_MESSAGE' => 'Ups. Wygląda na to, że ta strona nie istnieje.'
@@ -19681,13 +19190,6 @@ Masz na tym koncie włączone **2FA**. Użyj aplikacji od **2FA** i wprowadź ak
                 'NO' => 'Nie',
                 'REFRESH_PREVENTION' => 'Zapobiegaj odświeżaniu',
                 'REFRESH_PREVENTION_HELP' => 'Użyj unikatowego identyfikatora ID , aby upewnić się, że przeglądarka nie przetworzy formularza ponownie.'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Szukaj…',
-                'SEARCH_RESULTS' => 'Wyniki wyszukiwania',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Znaleziono jeden wynik dla frazy <strong>%s</strong>.',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Znaleziono %2$s wyników dla frazy <strong>%1$s</strong>.',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Fraza musi składać się z minimum %s znaków.'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 title: %1$s
@@ -20295,12 +19797,6 @@ Path: `%2$s`
                 'INLINE_ERRORS_HELP' => 'Útil se a validação no cliente estiver desabilitada. Mostra os erros próximo aos respectivos campos',
                 'RESOLUTION_MIN' => 'A {{attr}} é menor que o mínimo de {{min}}px <br />',
                 'RESOLUTION_MAX' => 'A {{attr}} é maior que o máximo de {{max}}px <br />'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'O que você procura?',
-                'SEARCH_RESULTS' => 'Resultados da pesquisa',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Pesquisa: <strong>%s</strong>. Foram encontrados 1 resultados',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Pesquisa: <strong>%s</strong>. Foram encontrados %s resultados'
             ],
             'FRONTMATTER_ERROR_PAGE' => '---
 título: %1$s
@@ -21486,12 +20982,6 @@ Caminho: `%2$s`
                 'ALLOW_WEBSERVER_GZIP' => 'Tillåt WebServer Gzip',
                 'OFFLINE_WARNING' => 'Anslutningen till GPM inte kan fastställas',
                 'CLI_COMPATIBILITY' => 'CLI kompatibilitet'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'Sök …',
-                'SEARCH_RESULTS' => 'Sökresultat',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Sökning: <strong>%s</strong> hittade ett resultat',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Sökning: <strong>%s</strong> hittade %s resultat'
             ],
             'FRONTMATTER_ERROR_PAGE' => '--- titel: %1$s --- # Fel: Ogiltig Frontmatter-sökväg: `%2$s` **%3$s** ``` %4$s ```',
             'NICETIME' => [
@@ -23859,44 +23349,6 @@ Path: `%2$s`
             'PLUGIN_ERROR' => [
                 'ERROR' => '错误',
                 'ERROR_MESSAGE' => '呃，似乎这个页面不存在。'
-            ],
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => '搜索 …',
-                'SEARCH_RESULTS' => '搜索结果',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => '查询: <strong>%s</strong> 找到 1 个结果',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => '查询: <strong>%s</strong> 找到 %s 个结果'
-            ]
-        ],
-        'pt-br' => [
-            'PLUGIN_COMMENTS' => [
-                'ADD_COMMENT' => 'Escreva um comentário',
-                'COMMENTS' => 'Comentários',
-                'EMAIL_NOT_CONFIGURED' => 'E-mail não configurado',
-                'NEW_COMMENT_EMAIL_SUBJECT' => 'Novo comentário em %1$s',
-                'NEW_COMMENT_EMAIL_BODY' => '<p>Um novo comentário foi feito em %1$s por %3$s (%4$s).</p><p>Página: %2$s</p><p>Texto: %5$s</p>',
-                'EMAIL_FOOTER' => '',
-                'NAME' => 'Name:',
-                'EMAIL' => 'Email:',
-                'WRITTEN_ON' => 'Publicado em',
-                'BY' => 'por',
-                'NAME_LABEL' => 'Nome',
-                'NAME_PLACEHOLDER' => 'Escreva seu nome',
-                'EMAIL_LABEL' => 'E-mail',
-                'EMAIL_PLACEHOLDER' => 'Escreva seu e-mail. Ex.: seunome@provedor.com.br',
-                'MESSAGE_LABEL' => 'Comentário',
-                'MESSAGE_PLACEHOLDER' => 'Escreva seu comentário',
-                'SUBMIT_COMMENT_BUTTON_TEXT' => 'Enviar',
-                'EMAIL_NEW_COMMENT_SUBJECT' => '[Novo comentário] de {{ form.value.name|e }}',
-                'THANK_YOU_MESSAGE' => 'Obrigada por enviar seu comentário!'
-            ]
-        ],
-        'kk' => [
-            'PLUGIN_SIMPLESEARCH' => [
-                'SEARCH_PLACEHOLDER' => 'іздеу …',
-                'SEARCH_RESULTS' => 'Іздеу нәтижесі',
-                'SEARCH_RESULTS_SUMMARY_SINGULAR' => 'Сұраныс бойынша: <strong>%s</strong> табылды 1',
-                'SEARCH_RESULTS_SUMMARY_PLURAL' => 'Сұраныс бойынша: <strong>%s</strong> табылды %s',
-                'SEARCH_FIELD_MINIMUM_CHARACTERS' => 'Кемінде %s таңба қосу'
             ]
         ],
         'nb' => [
@@ -23924,7 +23376,7 @@ Path: `%2$s`
                 6 => 'søndag'
             ]
         ],
-        'checksum' => '3148da68c2915433d3dce05262cda266',
-        'timestamp' => 1553842265
+        'checksum' => '2029e9d8433927c7e04d29f3487262cf',
+        'timestamp' => 1553848611
     ]
 ];

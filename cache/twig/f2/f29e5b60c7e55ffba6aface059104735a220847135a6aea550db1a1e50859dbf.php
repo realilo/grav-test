@@ -197,27 +197,6 @@ class __TwigTemplate_606d7a23d9ab36c14da8b5ec90816967d1509aae532d6d66d6a07cf4dc5
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 78
         echo "
-          ";
-        // line 79
-        if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "feed", []), "enabled", [])) {
-            // line 80
-            echo "            <li id=\"menu-item-1245\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1245\">
-              <a href=\"";
-            // line 81
-            echo ($context["feed_url"] ?? null);
-            echo ".atom\"><span class=\"screen-reader-text\">Atom 1.0</span></a>
-            </li>
-            <li id=\"menu-item-1246\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1246\">
-              <a href=\"";
-            // line 84
-            echo ($context["feed_url"] ?? null);
-            echo ".rss\"><span class=\"screen-reader-text\">RSS</span></a>
-            </li>
-          ";
-        }
-        // line 87
-        echo "
-
         </ul>
       </div>
    </div>
@@ -225,13 +204,13 @@ class __TwigTemplate_606d7a23d9ab36c14da8b5ec90816967d1509aae532d6d66d6a07cf4dc5
 
 <div id=\"site-header-widgets\" class=\"widget-area site-header-widgets\">
 ";
-        // line 95
+        // line 85
         if ($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "simplesearch", []), "enabled", [])) {
-            // line 96
+            // line 86
             echo "    ";
-            $this->loadTemplate("partials/simplesearch_searchbox_top.html.twig", "partials/header.html.twig", 96)->display($context);
+            $this->loadTemplate("partials/simplesearch_searchbox_top.html.twig", "partials/header.html.twig", 86)->display($context);
         }
-        // line 98
+        // line 88
         echo "
 </div>
 
@@ -271,7 +250,7 @@ class __TwigTemplate_606d7a23d9ab36c14da8b5ec90816967d1509aae532d6d66d6a07cf4dc5
 
     public function getDebugInfo()
     {
-        return array (  259 => 30,  256 => 29,  253 => 28,  249 => 24,  246 => 23,  243 => 22,  235 => 98,  231 => 96,  229 => 95,  219 => 87,  213 => 84,  207 => 81,  204 => 80,  202 => 79,  199 => 78,  181 => 74,  177 => 73,  170 => 72,  153 => 71,  148 => 68,  143 => 65,  133 => 60,  128 => 58,  125 => 57,  123 => 56,  120 => 55,  110 => 50,  105 => 48,  102 => 47,  100 => 46,  95 => 43,  93 => 42,  80 => 31,  78 => 28,  73 => 25,  71 => 22,  62 => 16,  55 => 14,  44 => 6,  37 => 4,  32 => 1,);
+        return array (  238 => 30,  235 => 29,  232 => 28,  228 => 24,  225 => 23,  222 => 22,  214 => 88,  210 => 86,  208 => 85,  199 => 78,  181 => 74,  177 => 73,  170 => 72,  153 => 71,  148 => 68,  143 => 65,  133 => 60,  128 => 58,  125 => 57,  123 => 56,  120 => 55,  110 => 50,  105 => 48,  102 => 47,  100 => 46,  95 => 43,  93 => 42,  80 => 31,  78 => 28,  73 => 25,  71 => 22,  62 => 16,  55 => 14,  44 => 6,  37 => 4,  32 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -361,16 +340,6 @@ class __TwigTemplate_606d7a23d9ab36c14da8b5ec90816967d1509aae532d6d66d6a07cf4dc5
               </a>
             </li>
           {% endfor %}
-
-          {% if config.plugins.feed.enabled %}
-            <li id=\"menu-item-1245\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1245\">
-              <a href=\"{{ feed_url }}.atom\"><span class=\"screen-reader-text\">Atom 1.0</span></a>
-            </li>
-            <li id=\"menu-item-1246\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-1246\">
-              <a href=\"{{ feed_url }}.rss\"><span class=\"screen-reader-text\">RSS</span></a>
-            </li>
-          {% endif %}
-
 
         </ul>
       </div>

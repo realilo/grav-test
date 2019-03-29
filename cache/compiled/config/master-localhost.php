@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1553843339,
-    'checksum' => '9e11b447e3e32dddb74875dfc62cf5c9',
+    'timestamp' => 1553848607,
+    'checksum' => '209ea9c2071ef0630d52c1a76be31035',
     'files' => [
         'user/config' => [
             'media' => [
@@ -35,7 +35,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1553843337
+                'modified' => 1553847225
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -43,7 +43,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1553842594
+                'modified' => 1553848571
             ]
         ],
         'system/config' => [
@@ -77,20 +77,12 @@ return [
                 'file' => 'user/plugins/archives/archives.yaml',
                 'modified' => 1553842122
             ],
-            'plugins/comments' => [
-                'file' => 'user/plugins/comments/comments.yaml',
-                'modified' => 1553842122
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1553842122
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1553842123
-            ],
-            'plugins/feed' => [
-                'file' => 'user/plugins/feed/feed.yaml',
                 'modified' => 1553842123
             ],
             'plugins/form' => [
@@ -107,14 +99,6 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1553842123
-            ],
-            'plugins/relatedpages' => [
-                'file' => 'user/plugins/relatedpages/relatedpages.yaml',
-                'modified' => 1553842123
-            ],
-            'plugins/simplesearch' => [
-                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
                 'modified' => 1553842123
             ],
             'plugins/taxonomylist' => [
@@ -204,94 +188,6 @@ return [
                     'year' => 'archives_year'
                 ]
             ],
-            'comments' => [
-                'enabled' => true,
-                'enable_on_routes' => [
-                    0 => '/blog'
-                ],
-                'disable_on_routes' => [
-                    0 => '/blog/blog-post-to-ignore',
-                    1 => '/ignore-this-route'
-                ],
-                'form' => [
-                    'name' => 'comments',
-                    'fields' => [
-                        0 => [
-                            'name' => 'name',
-                            'label' => 'PLUGIN_COMMENTS.NAME_LABEL',
-                            'placeholder' => 'PLUGIN_COMMENTS.NAME_PLACEHOLDER',
-                            'autocomplete' => 'on',
-                            'type' => 'text',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        1 => [
-                            'name' => 'email',
-                            'label' => 'PLUGIN_COMMENTS.EMAIL_LABEL',
-                            'placeholder' => 'PLUGIN_COMMENTS.EMAIL_PLACEHOLDER',
-                            'type' => 'email',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        2 => [
-                            'name' => 'text',
-                            'label' => 'PLUGIN_COMMENTS.MESSAGE_LABEL',
-                            'placeholder' => 'PLUGIN_COMMENTS.MESSAGE_PLACEHOLDER',
-                            'type' => 'textarea',
-                            'validate' => [
-                                'required' => true
-                            ]
-                        ],
-                        3 => [
-                            'name' => 'date',
-                            'type' => 'hidden',
-                            'process' => [
-                                'fillWithCurrentDateTime' => true
-                            ]
-                        ],
-                        4 => [
-                            'name' => 'title',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.page.header.title'
-                        ],
-                        5 => [
-                            'name' => 'lang',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.language.getLanguage'
-                        ],
-                        6 => [
-                            'name' => 'path',
-                            'type' => 'hidden',
-                            'evaluateDefault' => 'grav.uri.path'
-                        ]
-                    ],
-                    'buttons' => [
-                        0 => [
-                            'type' => 'submit',
-                            'value' => 'PLUGIN_COMMENTS.SUBMIT_COMMENT_BUTTON_TEXT'
-                        ]
-                    ],
-                    'process' => [
-                        0 => [
-                            'email' => [
-                                'subject' => 'PLUGIN_COMMENTS.EMAIL_NEW_COMMENT_SUBJECT',
-                                'body' => '{% include \'forms/data.html.twig\' %}'
-                            ]
-                        ],
-                        1 => [
-                            'addComment' => NULL
-                        ],
-                        2 => [
-                            'message' => 'PLUGIN_COMMENTS.THANK_YOU_MESSAGE'
-                        ],
-                        3 => [
-                            'reset' => true
-                        ]
-                    ]
-                ]
-            ],
             'email' => [
                 'enabled' => true,
                 'from' => 'your@email.here',
@@ -319,14 +215,6 @@ return [
                 'routes' => [
                     404 => '/error'
                 ]
-            ],
-            'feed' => [
-                'enabled' => true,
-                'limit' => 10,
-                'description' => 'My Feed Description',
-                'lang' => 'en-us',
-                'length' => 500,
-                'enable_json_feed' => false
             ],
             'form' => [
                 'enabled' => true,
@@ -411,70 +299,6 @@ return [
                 'enabled' => true,
                 'built_in_css' => true
             ],
-            'relatedpages' => [
-                'enabled' => true,
-                'limit' => 3,
-                'show_score' => false,
-                'score_threshold' => 20,
-                'filter' => [
-                    'items' => [
-                        '@page' => '/blog'
-                    ],
-                    'order' => [
-                        'by' => 'date',
-                        'dir' => 'desc'
-                    ]
-                ],
-                'page_in_filter' => true,
-                'explicit_pages' => [
-                    'process' => true,
-                    'score' => 100
-                ],
-                'taxonomy_match' => [
-                    'taxonomy' => 'tag',
-                    'taxonomy_taxonomy' => [
-                        'process' => true,
-                        'score_scale' => [
-                            1 => 50,
-                            2 => 75,
-                            3 => 100
-                        ]
-                    ],
-                    'taxonomy_content' => [
-                        'process' => true,
-                        'score_scale' => [
-                            1 => 20,
-                            2 => 30,
-                            3 => 45,
-                            4 => 60,
-                            5 => 70,
-                            6 => 80,
-                            7 => 90,
-                            8 => 100
-                        ]
-                    ]
-                ],
-                'content_match' => [
-                    'process' => false
-                ]
-            ],
-            'simplesearch' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'built_in_js' => true,
-                'display_button' => false,
-                'min_query_length' => 3,
-                'route' => '/search',
-                'search_content' => 'rendered',
-                'template' => 'simplesearch_results',
-                'filters' => NULL,
-                'filter_combinator' => 'and',
-                'ignore_accented_characters' => false,
-                'order' => [
-                    'by' => 'date',
-                    'dir' => 'desc'
-                ]
-            ],
             'taxonomylist' => [
                 'enabled' => true,
                 'route' => '/blog'
@@ -507,6 +331,19 @@ return [
                         'widget' => false,
                         'lang' => 'en'
                     ]
+                ]
+            ],
+            'relatedpages' => [
+                'limit' => 3,
+                'show_score' => false
+            ],
+            'simplesearch' => [
+                'route' => '/search',
+                'template' => 'simplesearch_results',
+                'filters' => NULL,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
                 ]
             ]
         ],
@@ -859,27 +696,12 @@ return [
             ],
             'slider' => [
                 0 => [
-                    'image' => 'slide3.jpg',
-                    'title' => 'Vent dEst',
-                    'url' => '#'
-                ],
-                1 => [
                     'image' => 'slide1.jpg',
-                    'title' => 'Vent dEst',
-                    'url' => '#'
-                ],
-                2 => [
-                    'image' => 'slide2.jpg',
-                    'title' => 'Vent dEst',
+                    'title' => 'Album',
                     'url' => '#'
                 ]
             ],
-            'menu' => [
-                0 => [
-                    'url' => 'error',
-                    'text' => 'Error Page'
-                ]
-            ],
+            'menu' => NULL,
             'copyright' => ''
         ],
         'streams' => [

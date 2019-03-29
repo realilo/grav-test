@@ -31,19 +31,8 @@ social:
     url: 'https://www.youtube.com/channel/UCiEkoy3KJE18qWgIJ-s_Yuw'
 slider:
   -
-    image: slide3.jpg
-    title: 'Vent dEst'
-    url: '#'
-  -
     image: slide1.jpg
-    title: 'Vent dEst'
-    url: '#'
-  -
-    image: slide2.jpg
-    title: 'Vent dEst'
+    title: 'Album'
     url: '#'
 menu:
-  -
-    url: error
-    text: 'Error Page'
 copyright: ''
